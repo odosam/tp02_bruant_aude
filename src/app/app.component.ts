@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CompteComponent } from './compte/compte.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
+  standalone : true,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  imports: [RouterOutlet,CompteComponent],
 })
+
 export class AppComponent {
-  title = 'tp02_bruant_aude_copy';
+  title = 'tp02_bruant_aude';
 }
