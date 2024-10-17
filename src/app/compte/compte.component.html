@@ -8,40 +8,39 @@
       <label for="choix3"><input type="radio" id="civilite3" name="civilite" value="Autre" />Autre</label>
    
 
-      <label>Prénom :</label>
-      <input id="prenom" type="text" [(ngModel)]="prenom">
+      <label for="prenom" >Prénom :</label>
+      <input name="prenom" id="prenom" type="text" [(ngModel)]="prenom">
 
-      <label>Nom :</label>
-      <input id="nom" type="text" [(ngModel)]="nom">
+      <label for="nom" >Nom :</label>
+      <input name="nom" id="nom" type="text" [(ngModel)]="nom">
   
-      <label>Numéro de téléphone :</label>
-      <input id="telephone" type="tel" [(ngModel)]="telephone">
+      <label for="telephone">Numéro de téléphone :</label>
+      <input name="telephone" id="telephone" type="tel" [(ngModel)]="telephone">
   
-      <label>Adresse :</label>
-      <input id="adresse" type="text" [(ngModel)]="adresse">
+      <label for="addresse">Adresse :</label>
+      <input name="addresse" id="adresse" type="text" [(ngModel)]="adresse">
       
-      <label>Code postal :</label>
-      <input id="codePostal" type="text" [(ngModel)]="codePostal">
+      <label for="codePostal">Code postal :</label>
+      <input name="codePostal" id="codePostal" type="text" [(ngModel)]="codePostal">
   
-      <label>Ville :</label>
-      <input id="ville" type="text" [(ngModel)]="ville">
+      <label for="ville">Ville :</label>
+      <input name="ville" id="ville" type="text" [(ngModel)]="ville">
 
-      <label>Pays :</label>
-      <input id="pays" type="text" [(ngModel)]="pays">
+      <label for="pays">Pays :</label>
+      <input name="pays" id="pays" type="text" [(ngModel)]="pays">
   
-      <label>Email :</label>
-      <input id="email" type="email" [(ngModel)]="email">
+      <label for="email">Email :</label>
+      <input name="email" id="email" type="email" [(ngModel)]="email">
   
-      <label>Login :</label>
-      <input id="login" type="text" [(ngModel)]="login">
+      <label for="login">Login :</label>
+      <input name="login" id="login" type="text" [(ngModel)]="login">
   
-      <label>Mot de passe :</label>
-      <input id="pwd" type="password" [(ngModel)]="pwd">
-      
+      <label for="pwd">Mot de passe :</label>
+      <input name="pwd" id="pwd" type="password" [(ngModel)]="pwd">
       <input type="submit" (click)="check()" value="Connexion" />
       
     </form>
 
-    <app-recap *ngIf="IsDiplay" [civilite]="civilite" [prenom]="prenom" [nom]="nom" [adresse]="adresse" [codePostal]="codePostal" [ville]="ville" [telephone]="telephone" [email]="email" [login]="login" [pwd]="pwd" > </app-recap>
+    <app-recap *ngIf="IsDiplay" [civilite]="civilite" [prenom]="prenom" [nom]="nom" [adresse]="adresse" [pays]="pays" [codePostal]="codePostal" [ville]="ville" [telephone]="telephone" [email]="email" [login]="login" [pwd]="pwd" > </app-recap>
   </div>
 </body>
